@@ -7,6 +7,7 @@ namespace Tahvohck_Mods
 {
     public class MRAS_Main : Planet
     {
+        [LoaderOptimization(LoaderOptimization.NotSpecified)]
         public static void Init()
         {
             var typesToChange = new[] {

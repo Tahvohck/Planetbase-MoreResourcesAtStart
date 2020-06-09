@@ -1,0 +1,11 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ include file="version.t4" #>
+<#@ output extension=".json" #>
+{
+    "ID":           "BiggerFoodMachines",
+    "Author":       "Tahvohck",
+    "Version":      "<#= this.version #>.<#= this.buildID #>",
+
+    "EntryMethod":   "FALSE-STUB",
+    "DisplayName":  "More Storage in Food Machines"
+}
