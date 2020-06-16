@@ -2,13 +2,23 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEngine;
 
 namespace Tahvohck_Mods
 {
-    public class MRAS_Main : Planet
+    public class MRAS_Main
     {
         [LoaderOptimization(LoaderOptimization.NotSpecified)]
         public static void Init()
+        {
+            try {
+                TahvohckUtil.FirstUpdate += RunOnce;
+            } catch (Exception e) {
+                Debug.Log(e.Message);
+            }
+        }
+
+        public static void RunOnce()
         {
             var typesToChange = new[] {
                 typeof(PlanetClassD),
