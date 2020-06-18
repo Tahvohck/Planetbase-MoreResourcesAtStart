@@ -11,5 +11,5 @@
 
     "Requirements": ["PBUtilities"],
     "ID":           "TAHVOHCK_MRAS",
-    "DisplayName":  "More resources at start"
+    "DisplayName":  "More Starting Resources"
 }
